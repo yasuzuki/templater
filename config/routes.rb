@@ -1,4 +1,7 @@
 Templater::Application.routes.draw do
+  resources :users
+
+
   resources :sql_templates
 
 
