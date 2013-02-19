@@ -3,6 +3,7 @@ Templater::Application.routes.draw do
 
 
   resources :sql_templates
+  match "cms/*page", to: "cms#respond"
 
 
   # The priority is based upon order of creation:

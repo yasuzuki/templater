@@ -32,7 +32,6 @@ class SqlTemplateTest < ActiveSupport::TestCase
  
     sql_templates(:one)
     t = resolver.find_all("index", "users", false, details, cache_key).first
-    binding.pry
     assert_match /Listing users/, t.source
 
     sql_template = sql_templates(:one)
